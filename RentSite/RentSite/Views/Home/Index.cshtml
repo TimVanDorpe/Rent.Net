@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Share and rent</h1>
+    <p class="lead">On this website you can share , rent or trade stuff with friends or strangers !</p>    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Share</h2>
+        <p>
+            In this part of the website you can <b>share</b> things with your spectators.
+        </p>
+        <p> @Html.ActionLink("Share", "Share", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Trade</h2>
+       <p> In this part of the website you can <b>trade</b> things with your spectators.</p>
+       <p> @Html.ActionLink("Trade", "Trade", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p> In this part of the website you can <b>rent</b> things with your spectators.</p>
+        <p> @Html.ActionLink("Rent", "Rent", "Home")</p>
+    </div>
+</div>
